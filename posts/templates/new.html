@@ -6,12 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>index</h1>
-    <a href="/posts/new/">new</a>
-    {% for post in posts %}
-        <a href="/posts/{{post.id}}">{{post.title}}</a>
-        <p>{{post.content}}</p>
-        <hr>
-    {% endfor%}
+    <form action="/posts/create">
+        <input type="text" name="title">
+        <input type="text" name="content">
+        <input type="submit">
+    </form>
 </body>
 </html>
