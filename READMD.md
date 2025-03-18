@@ -19,3 +19,13 @@ django-admin startproject crud .
 django-admin startapp posts
 ```
 settings.py 에 `posts` 등록
+
+## 2. CRUD
+- modeling(skiima를 정의한다)
+    `models.py`
+```python
+class Post(models.Model):
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+```
+
