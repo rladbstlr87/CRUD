@@ -30,11 +30,11 @@ class Post(models.Model):
 ```
 
 - migration
-    1. 번역본 만들기
+    1. **번역본 만들기**
         ```shell
         python manage.py makemigrations
         ```
-    2. DB에 반영
+    2. **DB에 반영**
         ```shell
         python manage.py migrate
         ```
@@ -42,7 +42,7 @@ class Post(models.Model):
         ```shell
         python manage.py createsuperuser
         ```
-    4. admin 페이지에 model 등록
+    4. admin 페이지에 models 등록
         `admin.py`
         ```python
         from django.contrib import admin
