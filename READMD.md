@@ -38,3 +38,15 @@ class Post(models.Model):
         ```shell
         python manage.py migrate
         ```
+    3. Super user 생성
+        ```shell
+        python manage.py createsuperuser
+        ```
+    4. admin 페이지에 model 등록
+        `admin.py`
+        ```python
+        from django.contrib import admin
+        from .models import Post
+
+        admin.site.register(Post)
+        ```
