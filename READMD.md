@@ -29,3 +29,12 @@ class Post(models.Model):
     content = models.TextField()
 ```
 
+- migration
+    1. 번역본 만들기
+        ```shell
+        python manage.py makemigrations
+        ```
+    2. DB에 반영
+        ```shell
+        python manage.py migrate
+        ```
